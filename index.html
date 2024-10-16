@@ -1,424 +1,210 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
-    	<title>Developer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    	<!-- meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.theme.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-		<!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-        <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
     </head>
     <body>
-        <div class="content-block" id="header">
-            <div id="overlay-1">
-                <header id="site-header" class="clearfix">
-                    <div class="pull-left">
-                        <h1><a href="#">Developer</a></h1>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Lokendra</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Lokendra Prasad Rijal</span><br> Software Developer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
                     </div>
-                    <div class="pull-right">
-                        <nav class="navbar site-nav" role="navigation">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <i class="fa fa-bars fa-2x"></i>
-                                </button>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Lokendra</h2>
+                        <p class="about__text">
+                            I am a self-motivated , reliable , confident , responsible and hard working computer enthusiastic person.
+                            I am a good team worker and adaptable to all challenging situations. I am able to work well both in a team
+                            environment as well as using my own initiatives. I am able to work well under pressure and adhere to
+                            strict deadlines
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">ASP.NET MVC</span>
                             </div>
+                            <div class="skills__bar skills__html">
 
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                                    <li><a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a></li>
-                                    <li><a href="#services"><i class="fa fa-bullhorn"></i> Me</a></li>
-                                    <li><a href="#testimonials"><i class="fa fa-thumbs-up"></i> Tetimonials</a></li>
-                                    <li><a href="#contact"><i class="fa fa-phone-square"></i> Contact</a></li>
-                                </ul>
-                            </div>  <!-- /.navbar-collapse -->
-                        </nav>
-                    </div>
-                </header>	<!-- site-header -->
-                
-                <div class="middle text-center clearfix">
-                    <div class="container">
-                        <h1 class="pro-name">Web <!-- <span style="color: #71b644;" > -->Developer<!-- </span> --></h1>
-                        <p class="tagline">Bring your dreams to life</p>
-                        <div class="skills">
-
-                        </div>  <!-- skills -->
-                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
-                    </div>  <!-- container -->
-                </div>  <!-- middle -->
-                
-                <div class="bottom text-center">
-                    <a href="#portfolio"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-                </div>
-            </div>  <!-- overlay-1 -->
-        </div>  <!-- content-block -->
-
-        <div class="content-block text-center" id="portfolio">
-            <header class="block-heading cleafix">
-                <h1>Latest Works</h1>
-                <!-- <p>Take a look at some of my recent products</p> -->
-            </header>
-
-            <div class="isotope portfolio-items">
-                <div class="element-item grid">
-                    <div class="effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work1.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work2.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work3.png">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work7.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work8.png">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work4.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work5.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-                <div class="element-item grid">
-                    <div class="portfolio-item effect-zoe">
-                        <img class="img-responsive" alt="Portfolio" src="img/work6.jpg">
-                        <figcaption>
-                            <h2 class="hidden-xs">Creative <span>Joe</span></h2>
-                            <p class="icon-links">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                            </p>
-                        </figcaption>
-                    </div>
-                </div>
-            </div>	<!-- isotope portfolio-items -->
-            <a href="#" class="btn btn-lg btn-view">
-                <i class="fa fa-eye"></i>
-                <span>View All</span>
-            </a>
-        </div>  <!-- content-block -->
-
-       <!--  <div class="content-block text-center" id="services">
-            <div class="overlay-2">
-                        <header class="block-heading cleafix">
-                            <h1>More About Me</h1>
-                            <p>Lorem Ipsum Text</p>
-                        </header>
-                        <div class="block-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                <div class="row ">
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Completed Project</h4>
-                                        <h2 class="proj-name count1 count-timer" >020</h2>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Working Project</h4>
-                                        <h2 class="proj-name count2">9</h2>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h4 class="pro-stat">Top Rated Project</h4>
-                                        <h2 class="proj-name count3">015</h2>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
                             </div>
                         </div>
-                    </div>    overlay-2
-        </div>  --> <!-- content-block -->
-        <div id="services" class="content-block">
-            <div id="numbers" class="parallax">
-                <div class="overlay">
-                    <!-- title -->
-                    <div class="container-fluid numbers-title">
-                        <div class="container">
-                            <div class="row block-heading">
-                                <h1>Some Cool Facts About Me</h1>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">c#</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <!-- number list -->
-                        <ul class="numbersList">
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Conferences </h4>
-                                <span id="number1" class="count1 count-timer">101</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Lines of Code</h4>
-                                <span id="number2" class="count2">92</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Hours of Work</h4>
-                                <span id="number3"  class="count3">54</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Repositories in Git</h4>
-                                <span id="number4" class="count4">99</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Mobile APP</h4>
-                                <span id="number5" class="count5">124</span>
-                            </li>
-                            <li class="col-md-2 col-sm-4 col-xs-6">
-                                <h4> Happy Client </h4>
-                                <span id="number6" class="count6">45</span>
-                            </li>
-                        </ul><!-- numbersList end -->
-                    </div><!-- container-fluid end -->
-                </div><!-- overlay end -->
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Marlon</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-        </div>
-            
-
-        <div class="content-block" id="testimonials">
-            <header class="block-heading cleafix text-center">
-                <h1>What Clients Say</h1>
-                <!-- <p>Lorem Ipsum Text</p> -->
-            </header>
-            <div class="block-content text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                        	<div class="owl-carousel">
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_31-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jhon Doe</strong><br>
-                                        <span>Head of Ideas, Technext</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_11-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Jane Doe</strong><br>
-                                        <span>CEO, Apple Inc</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-								<div class="owl-item">
-									<div class="testimonial">
-                                        <img alt="Client Photo" src="img/testimonial_22-190x190.jpg">
-                                        <p>In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget ultricies sit amet.</p>
-                                        <strong>Albert Doe</strong><br>
-                                        <span>Team Lead, Design Studio</span>
-                                    </div>
-								</div>	<!-- owl-item -->
-							</div>	<!-- owl-carousel -->
-						</div>	<!-- col-md-12 -->
-                    </div>	<!-- row -->
-                </div>	<!-- container -->
-            </div>	<!-- block-content -->
-        </div>	<!-- content-block -->
-
-        <div class="content-block" id="contact">
-            <div class="overlay-3">
-                <header class="block-heading cleafix text-center">
-                    <h1>Contact</h1>
-                    <!-- <p>Feel Free to Contact</p> -->
-                </header>
-                <div class="block-content text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 wow animated fadeInLeft">
-                                <form class="contact-form" action="form.php">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                    <input type="email" name="email" placeholder="Email" required>
-                                    <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
-                                    <input type="submit" value="Submit">
-                                </form>
-                            </div>
-                            <div class="col-md-6 wow animated fadeInRight">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="contact-info">
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-map-marker"></i>
-                                                </div>
-                                                <p><strong> Address:</strong> 308 Negra Arroyo Lane Albuquerque, New Mexico, 87111.
-                                                </p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-mobile"></i>
-                                                </div>
-                                                <p><strong> Cell No:</strong> 1-800-123-456 </p>
-                                            </div>
-                                            <div class="clearfix">
-                                                <div class="rotated-icon">
-                                                    <div class="sqaure-nebir"></div>
-                                                    <i class="fa fa-envelope-o"></i>
-                                                </div>
-                                                <p>
-                                                    <strong> Email:</strong> developer@gmail.com
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <ul class="social-box">
-                                        <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a class="twitter-icon" href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a class="g-plus-icon" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li><a class="linkedin-icon" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>	<!-- block-content -->
-            </div>	<!-- overlay-3 -->
-        </div>	<!-- content-block -->
-
-        <footer id="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="copyright">&copy; 2014 Developer</div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="designed-by">Designed By <a href="http://themewagon.com/" target="_blank">ThemeWagon</a></div>
-                    </div>
-                </div>
-            </div>
-        </footer>	<!-- site-footer -->
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
 
 
-        <!-- js -->
-        <script>
-            new WOW().init();
-        </script>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.actual.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.isonscreen.js"></script>
-       
-        <script src="js/main.js"></script>
-
-        <script>
-        	$(document).ready(function(){
-  				$('.owl-carousel').owlCarousel({
-    				loop:true,
-    				margin:10,
-    				autoplay:true,
-    				autoplayTimeout:3000,
-    				autoplayHoverPause:true,
-    				responsiveClass:true,
-    				responsive:{
-        					0:{
-					            items:1,
-        					},
-					        600:{
-					            items:1,
-					        },
-					        1000:{
-					            items:1,
-					        }
-    				}
-				})
-			});
-        </script>
-
-	</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
