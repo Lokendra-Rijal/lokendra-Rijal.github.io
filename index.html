@@ -1,211 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Lokendra Rijal — software developer focused on .NET, C#, web applications, APIs, and SQL Server.">
+  <title>Lokendra Rijal — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a href="#home" class="logo"><span class="logo-symbol">LR</span><span>LOKENDRA<span class="accent">.</span></span></a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-menu">
+        <a href="#about">About</a><a href="#skills">Expertise</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-text reveal">
+        <p class="kicker"><span class="status-dot"></span> SOFTWARE DEVELOPER <span class="slash">/</span> NEPAL</p>
+        <p class="hello">Hello, I'm</p>
+        <h1>Lokendra<br><span class="outline-word">Rijal<span class="accent">.</span></span></h1>
+        <h2>Engineering thoughtful<br>solutions <span class="accent">through code.</span></h2>
+        <p class="intro">I build dependable web applications, backend services, and data-driven solutions with a focus on maintainability, performance, and practical problem-solving.</p>
+        <div class="hero-buttons"><a class="btn btn-bright" href="#projects">Explore projects <span>↘</span></a><a class="btn btn-quiet" href="#contact">Let's connect <span>↗</span></a></div>
+        <div class="hero-foot"><span><b>01</b> Thoughtful engineering</span><span><b>02</b> Continuous learning</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative code illustration">
+        <div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="crosshair cross-a">+</div><div class="crosshair cross-b">+</div>
+        <div class="terminal">
+          <div class="terminal-head"><div class="traffic"><i></i><i></i><i></i></div><span>Lokendra.cs</span><span class="terminal-dots">···</span></div>
+          <div class="terminal-code">
+            <div><em>01</em><span class="purple">public class</span> <span class="blue">Developer</span></div>
+            <div><em>02</em>{</div>
+            <div><em>03</em>&nbsp;&nbsp;<span class="purple">public string</span> Focus =&gt;</div>
+            <div><em>04</em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">".NET &amp; Web Development"</span>;</div>
+            <div><em>05</em></div>
+            <div><em>06</em>&nbsp;&nbsp;<span class="purple">public string[]</span> Toolkit =&gt;</div>
+            <div><em>07</em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="yellow">new</span>[]</div>
+            <div><em>08</em>&nbsp;&nbsp;&nbsp;&nbsp;{</div>
+            <div><em>09</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"C#"</span>, <span class="green">"ASP.NET"</span>,</div>
+            <div><em>10</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"SQL Server"</span>, <span class="green">"APIs"</span></div>
+            <div><em>11</em>&nbsp;&nbsp;&nbsp;&nbsp;};</div><div><em>12</em>}</div>
+          </div>
+          <div class="terminal-foot"><span><i></i> Ready to build</span><span>C# / .NET</span></div>
+        </div>
+        <div class="floating floating-top"><span class="float-icon">⌘</span><span><b>Clean code</b><small>Made to maintain</small></span></div>
+        <div class="floating floating-bottom"><span class="float-icon mint">↗</span><span><b>Growth mindset</b><small>Learn · Build · Improve</small></span></div>
+        <div class="art-label">FIG. 01 — DEVELOPER MINDSET</div>
+      </div>
+      <a class="scroll-down" href="#about"><span></span> SCROLL TO DISCOVER</a>
+    </section>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <section class="section wrap" id="about">
+      <div class="section-top reveal"><p class="section-index">01 <span>/</span> ABOUT</p><h2>Practical thinking.<br><span class="dim">Purposeful building.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-copy reveal"><p class="statement">I enjoy transforming complex requirements into clear, reliable software that people can actually use.</p><p>My interests include backend development, the .NET ecosystem, database-driven applications, and building maintainable web solutions. I value clean architecture, collaboration, and learning from every challenge.</p><div class="quote-line">“Good software starts with understanding the problem.”</div></div>
+        <div class="about-list reveal"><article><span>01</span><div><h3>Build for reliability</h3><p>Structure solutions to be understandable, testable, and easier to evolve.</p></div></article><article><span>02</span><div><h3>Think about the user</h3><p>Keep interfaces clear and workflows useful, not complicated.</p></div></article><article><span>03</span><div><h3>Stay curious</h3><p>Keep improving through experimentation, feedback, and deliberate learning.</p></div></article></div>
+      </div>
+    </section>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <section class="section skills-section" id="skills"><div class="wrap">
+      <div class="section-top reveal"><p class="section-index">02 <span>/</span> EXPERTISE</p><h2>The tools behind<br><span class="dim">the solutions.</span></h2><p class="section-summary">A focused toolkit for creating web applications and backend systems. Update these categories to match your current experience.</p></div>
+      <div class="skill-grid">
+        <article class="skill reveal"><div class="skill-heading"><span class="skill-icon">⌘</span><span class="skill-no">SKILLSET 01</span></div><h3>Backend engineering</h3><p>Application logic, services, and web APIs.</p><div class="chips"><span>C#</span><span>.NET</span><span>ASP.NET MVC</span><span>ASP.NET Core</span><span>REST APIs</span></div></article>
+        <article class="skill reveal"><div class="skill-heading"><span class="skill-icon">▤</span><span class="skill-no">SKILLSET 02</span></div><h3>Data & databases</h3><p>Data modeling, queries, and persistence.</p><div class="chips"><span>SQL Server</span><span>Entity Framework</span><span>Database design</span></div></article>
+        <article class="skill reveal"><div class="skill-heading"><span class="skill-icon">◈</span><span class="skill-no">SKILLSET 03</span></div><h3>Web interfaces</h3><p>Responsive and accessible user experiences.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive design</span></div></article>
+        <article class="skill reveal"><div class="skill-heading"><span class="skill-icon">⌁</span><span class="skill-no">SKILLSET 04</span></div><h3>Developer workflow</h3><p>Debugging, iteration, and maintainable delivery.</p><div class="chips"><span>Git</span><span>Debugging</span><span>Problem solving</span><span>Clean code</span></div></article>
+      </div>
+      <p class="disclaimer">Note: Keep only technologies you can confidently discuss in an interview.</p>
+    </div></section>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Lokendra</a>
-                </div>
+    <section class="section wrap" id="projects">
+      <div class="section-top top-split reveal"><div><p class="section-index">03 <span>/</span> SELECTED WORK</p><h2>Ideas made<br><span class="dim">into software.</span></h2></div><p class="section-summary">Show the problem, your contribution, and the outcome. The cards below are editable examples—replace them with your real projects before publishing.</p></div>
+      <div class="project-grid">
+        <article class="project project-wide reveal"><div class="project-art dashboard-art"><div class="dash-ui"><div class="dash-side"><i></i><i></i><i></i><i></i></div><div class="dash-content"><span class="ui-label">WORKSPACE / OVERVIEW</span><div class="dash-kpis"><i></i><i></i><i></i></div><div class="dash-chart"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="dash-row"></div><div class="dash-row tiny"></div></div></div><span class="art-caption">WEB APPLICATION / 01</span></div><div class="project-body"><p class="project-type">01 — WEB APPLICATION</p><h3>Business Management System</h3><p>A sample concept for organizing records, streamlining workflows, and giving users a clear view of operational data.</p><div class="chips"><span>.NET</span><span>ASP.NET</span><span>SQL Server</span></div><p class="placeholder">Replace with your project details and verified results.</p><div class="project-links"><a href="#contact">Discuss project ↗</a></div></div></article>
+        <article class="project reveal"><div class="project-art api-art"><div class="api-card"><span class="api-symbol">{ }</span><i></i><i></i><i></i><span class="ok">● 200 OK</span></div><span class="art-caption">BACKEND / 02</span></div><div class="project-body"><p class="project-type">02 — BACKEND</p><h3>REST API Service</h3><p>A sample service emphasizing consistent endpoints, input validation, and maintainable backend logic.</p><div class="chips"><span>C#</span><span>REST API</span><span>EF Core</span></div><p class="placeholder">Replace with your project details and links.</p><div class="project-links"><a href="#contact">Discuss project ↗</a></div></div></article>
+        <article class="project reveal"><div class="project-art data-art"><div class="data-stack"><i></i><i></i><i></i><span>DATA / INSIGHTS</span></div><span class="art-caption">DATABASE / 03</span></div><div class="project-body"><p class="project-type">03 — DATA & REPORTING</p><h3>Reporting Dashboard</h3><p>A sample data-focused tool concept for bringing structured information into useful reports and insights.</p><div class="chips"><span>SQL Server</span><span>.NET</span><span>JavaScript</span></div><p class="placeholder">Replace with your project details and links.</p><div class="project-links"><a href="#contact">Discuss project ↗</a></div></div></article>
+      </div>
+    </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    <section class="section journey-section" id="journey"><div class="wrap">
+      <div class="section-top reveal"><p class="section-index">04 <span>/</span> JOURNEY</p><h2>Experience in<br><span class="dim">progress.</span></h2><p class="section-summary">Use this timeline to tell your professional story. Replace every sample entry with verified details.</p></div>
+      <div class="timeline reveal"><article><span class="timeline-pin"></span><p class="timeline-label">PROFESSIONAL EXPERIENCE</p><h3>Your current or most recent role</h3><p class="timeline-meta">Company name · Location · Dates</p><p class="timeline-desc">Describe the applications you contributed to, the technologies you used, and the impact of your work. Do not include confidential company or customer information.</p></article><article><span class="timeline-pin"></span><p class="timeline-label">EDUCATION</p><h3>Your degree or qualification</h3><p class="timeline-meta">Institution · Graduation year</p><p class="timeline-desc">Add relevant studies, certifications, or milestones that support your career goals.</p></article></div>
+      <div class="resume-panel reveal"><div><p class="section-index">MORE DETAILS</p><h3>Want to see my CV?</h3><p>Add your actual CV PDF and link it here for visitors to open or download.</p></div><a class="btn btn-bright" href="#contact">Get in touch <span>↗</span></a></div>
+    </div></section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Lokendra Rijal</span><br> Software Developer</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/lokendra-rijal-035988192/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Lokendra-Rijal/lokendra-Rijal.github.io" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/PHOTO_LOKENDRA_RIJAL.jpg"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/PHOTO_LOKENDRA_RIJAL.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Lokendra</h2>
-                        <p class="about__text">
-                            I am a self-motivated , reliable , confident , responsible and hard working computer enthusiastic person.
-                            I am a good team worker and adaptable to all challenging situations. I am able to work well both in a team
-                            environment as well as using my own initiatives. I am able to work well under pressure and adhere to
-                            strict deadlines
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">A .NET developer with 4 years of experience in the fintech industry, specializing in the development and optimization of core banking systems, inventory management systems, and HR systems. Proficient in .NET Core, ASP.NET, and MVC frameworks, with a solid understanding of both front-end (HTML, CSS, JavaScript) and back-end (C#, SQL Server, Entity Framework) technologies. Experienced in building scalable, secure applications and integrating RESTful APIs to streamline business processes. Strong problem-solving skills, agile methodology experience, and a commitment to delivering high-quality, efficient solutions aligned with business needs.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">ASP.NET MVC</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">c#</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                
-                    <a href="" class="work__img">
-                        <img src="assets/img/account.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/inventory.png" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/dairy.jpeg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/coop.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Lokendra Rijal</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/rijallokendra1/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/lokendra_rijal/?fbclid=IwY2xjawF9eehleHRuA2FlbQIxMAABHR5qqcOpn-MXBwpbCUGWMLVoEsTLHOO1LeafpkyIbOmsi4eo-osZC1ooFQ_aem_enUutJ8LO3Vq3iEP72Vo_A" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; 2019-2025. All rigths reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <section class="contact-section" id="contact"><div class="wrap contact-inner reveal"><p class="section-index">05 <span>/</span> CONTACT</p><p class="contact-overline">HAVE A PROJECT OR OPPORTUNITY?</p><h2>Let's make<br><span class="gradient-text">something useful.</span></h2><p class="contact-description">Open to meaningful conversations about software, collaboration, and opportunities to solve interesting problems.</p><a class="email-address" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com <span>↗</span></a><div class="socials"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div></div></section>
+  </main>
+  <footer class="footer wrap"><a href="#home" class="logo"><span class="logo-symbol">LR</span><span>LOKENDRA<span class="accent">.</span></span></a><p>Designed with intent. Built to evolve.</p><span>© <span id="year"></span> Lokendra Rijal</span></footer>
+</body>
 </html>
